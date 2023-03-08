@@ -16,25 +16,7 @@ import com.example.wordsfactory.SignupActivity
 import com.google.android.material.button.MaterialButton
 
 class OnboardActivity : AppCompatActivity() {
-    private var onboardItemsAdapter: OnboardItemsAdapter = OnboardItemsAdapter(
-        listOf(
-            OnboardItem(
-                image = onboard_image_1,
-                title = getString(R.string.onboard_title_1),
-                description = getString(R.string.onboard_description)
-            ),
-            OnboardItem(
-                image = onboard_image_2,
-                title = getString(R.string.onboard_title_2),
-                description = getString(R.string.onboard_description)
-            ),
-            OnboardItem(
-                image = onboard_image_3,
-                title = getString(R.string.onboard_title_3),
-                description = getString(R.string.onboard_description)
-            ),
-        )
-    )
+    private lateinit var onboardItemsAdapter: OnboardItemsAdapter
     private lateinit var indicatorsContainer: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +29,26 @@ class OnboardActivity : AppCompatActivity() {
     }
 
     private fun setItems() {
+        onboardItemsAdapter = OnboardItemsAdapter(
+            listOf(
+                OnboardItem(
+                    image = onboard_image_1,
+                    title = getString(R.string.onboard_title_1),
+                    description = getString(R.string.onboard_description)
+                ),
+                OnboardItem(
+                    image = onboard_image_2,
+                    title = getString(R.string.onboard_title_2),
+                    description = getString(R.string.onboard_description)
+                ),
+                OnboardItem(
+                    image = onboard_image_3,
+                    title = getString(R.string.onboard_title_3),
+                    description = getString(R.string.onboard_description)
+                ),
+            )
+        )
+
         val onboardViewPager = findViewById<ViewPager2>(R.id.onboardViewPager)
         onboardViewPager.adapter = onboardItemsAdapter
         onboardViewPager.registerOnPageChangeCallback(object :
