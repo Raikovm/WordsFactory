@@ -6,4 +6,13 @@
     <string name="onboard_title_1">Learn anytime and anywhere</string>
     <string name="onboard_title_2">Find a course for you</string>
     <string name="onboard_title_3">Improve your skills</string>
+    <string name="placeholder_name">Name</string>
+    <string name="placeholder_e_mail">E-mail</string>
+    <string name="placeholder_password">Password</string>
+    <string name="header_signup">Sign up</string>
+    <string name="description_signup">Create your account</string>
+    <string name="button_log_in">Log in</string>
+    <string name="button_sign_up">Sign up</string>
+    <string name="loginFail">Login error</string>
+    <string name="loginFailEmpty">Some fields are empty!</string>
 </resources>
