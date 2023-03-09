@@ -15,4 +15,15 @@
     <string name="button_sign_up">Sign up</string>
     <string name="loginFail">Login error</string>
     <string name="loginFailEmpty">Some fields are empty!</string>
+    <string name="placeholder_dictionary_search">Search</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_dictionary">Dictionary</string>
+    <string name="title_training">Training</string>
+    <string name="title_video">Video</string>
+    <string name="cooking">Cooking</string>
+    <string name="part_of_speech">Part of Speech:</string>
+    <string name="meanings">Meanings:</string>
+    <string name="noun">Noun</string>
+    <string name="transcription">[ˈkʊkɪŋ]</string>
+    <string name="add_to_dictionary">Add to Dictionary</string>
 </resources>
